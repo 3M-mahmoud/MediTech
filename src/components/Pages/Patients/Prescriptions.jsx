@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import Swal from "sweetalert2";
@@ -65,7 +65,7 @@ const Prescriptions = () => {
   // side Effect
   useEffect(() => {
     dispatch(prescriptionsDetails({ userId, patientId }));
-  }, []);
+  }, [dispatch, userId, patientId]);
   return <div className="sec-3th mb-5">{content}</div>;
 };
 

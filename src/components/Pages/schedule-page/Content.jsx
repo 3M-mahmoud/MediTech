@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./schedule.css";
 
@@ -14,7 +14,7 @@ const Content = () => {
     setSelectedBoxes(index);
     tableDetails(user.id, day)
   };
- function tableDetails(id, day=doctorInfo[0]) {
+ const tableDetails = useCallback((id, day=doctorInfo[0]) => {
   fetch(`https://meditech20240517184700.azurewebsites.net/api/Appointment/appointmentsDoctor/${id}/${day}`)
   .then(async (res) => {
     if(res.ok) {
@@ -22,7 +22,7 @@ const Content = () => {
       setTable(data)
     }
   })
- }
+ }, [doctorInfo])
   // Constants
  const boxes =  doctorInfo.map((el, index) => {
     return (
@@ -68,7 +68,7 @@ const Content = () => {
       return () => {
         isMuted = false;
       }
-  }, []);
+  }, [tableDetails, user.id]);
   
   return (
     <div className="container schedule" id="tabs">
