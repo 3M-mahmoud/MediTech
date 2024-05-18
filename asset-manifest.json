@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MediTech/static/css/main.0a637c20.css",
-    "main.js": "/MediTech/static/js/main.11991c93.js",
+    "main.js": "/MediTech/static/js/main.75813a41.js",
     "static/media/1.jpeg": "/MediTech/static/media/1.04ba0209b5fe07e3f788.jpeg",
     "static/media/Doctor.png": "/MediTech/static/media/Doctor.fa1d6dcc50c31d15cacc.png",
     "static/media/2.png": "/MediTech/static/media/2.0e3329c6c722d11b144c.png",
@@ -10,10 +10,10 @@
     "static/media/4.png": "/MediTech/static/media/4.1fb31d08dca54459a6ce.png",
     "index.html": "/MediTech/index.html",
     "main.0a637c20.css.map": "/MediTech/static/css/main.0a637c20.css.map",
-    "main.11991c93.js.map": "/MediTech/static/js/main.11991c93.js.map"
+    "main.75813a41.js.map": "/MediTech/static/js/main.75813a41.js.map"
   },
   "entrypoints": [
     "static/css/main.0a637c20.css",
-    "static/js/main.11991c93.js"
+    "static/js/main.75813a41.js"
   ]
 }
