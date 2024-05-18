@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment, useCallback, useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 const Medicine = ({Prescriptions, addPrescriptions}) => {
@@ -85,7 +85,7 @@ const Medicine = ({Prescriptions, addPrescriptions}) => {
     dispatch(addPrescriptions(medicine));
     setShowModal(false);
   }
-  function medicineDetails(isMuted) {
+  const medicineDetails = useCallback((isMuted) => {
     let url_api = "";
     if (Prescriptions === "Medicine") {
       url_api = "https://meditech20240517184700.azurewebsites.net/api/Medication";
@@ -101,7 +101,7 @@ const Medicine = ({Prescriptions, addPrescriptions}) => {
         setMedicine(data);
       }
     });
-  }
+  }, [Prescriptions])
   function btnRemoveBox(id) {
     const newBoxes = boxesContent.filter((el) => el.id !== id)
     dispatch(addPrescriptions(newBoxes));
@@ -113,7 +113,7 @@ const Medicine = ({Prescriptions, addPrescriptions}) => {
     return () => {
       isMuted = false;
     };
-  }, []);
+  }, [medicineDetails]);
   return (
     <Fragment>
     <div className={`overly ${showModal ? "" : "hide"}`}></div>

@@ -80,7 +80,7 @@ const Content = () => {
     return () => {
       isMuted = false;
     };
-  }, [patientId]);
+  }, [dispatch, patientId]);
   const checkData = Object.keys(patientInfo).length;
   return (
     <Fragment>

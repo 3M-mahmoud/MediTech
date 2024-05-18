@@ -1,9 +1,7 @@
-import { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
-  useNavigate,
 } from "react-router-dom";
 import HomePage from "./components/Pages/home-page/HomePage";
 import Login from "./components/Pages/Login/Login.jsx";
