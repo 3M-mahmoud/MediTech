@@ -1,0 +1,50 @@
+:root {
+  --main-color: #0f67fe;
+  --white-color: #ffffff;
+  --secwhite-color: #fcfcfc;
+  --dark-color: #1e232c;
+  --light-color: #a1b9e5;
+  --black-color: #040919;
+  --gray-color: #57657f;
+  --red-colo: #bb2e2e;
+  --green-color: #2fba45;
+  --login-color: #bcc3ce;
+  --input-color: #cccccc;
+}
+
+.landing {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(../../../images/1.jpeg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  min-height: calc(100vh - 72px);
+}
+.landing h1 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 46px;
+  color: var(--secwhite-color);
+}
+.landing p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 37px;
+  color: var(--secwhite-color);
+}
+
+.main-btn {
+  color: var(--secwhite-color);
+  background-color: var(--main-color);
+  width: 230px;
+  height: 60px;
+  border-radius: 8px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.main-btn:hover {
+  color: var(--secwhite-color);
+}/*# sourceMappingURL=landing.css.map */

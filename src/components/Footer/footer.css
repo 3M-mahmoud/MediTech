@@ -1,0 +1,32 @@
+:root {
+  --main-color: #0f67fe;
+  --white-color: #ffffff;
+  --secwhite-color: #fcfcfc;
+  --dark-color: #1e232c;
+  --light-color: #a1b9e5;
+  --black-color: #040919;
+  --gray-color: #57657f;
+  --red-colo: #bb2e2e;
+  --green-color: #2fba45;
+  --login-color: #bcc3ce;
+  --input-color: #cccccc;
+}
+
+footer {
+  background-color: var(--black-color);
+}
+footer .container {
+  padding-top: 60px;
+}
+footer .container .row {
+  padding-bottom: 50px;
+}
+footer .container .row h3 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  width: 800;
+  size: 30px;
+}
+footer .container .row ul li {
+  font-size: 13px;
+  padding-top: 12px;
+}/*# sourceMappingURL=footer.css.map */

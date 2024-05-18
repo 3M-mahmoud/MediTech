@@ -1,0 +1,99 @@
+:root {
+  --main-color: #0f67fe;
+  --white-color: #ffffff;
+  --secwhite-color: #fcfcfc;
+  --dark-color: #1e232c;
+  --light-color: #a1b9e5;
+  --black-color: #040919;
+  --gray-color: #57657f;
+  --red-colo: #bb2e2e;
+  --green-color: #2fba45;
+  --login-color: #bcc3ce;
+  --input-color: #cccccc;
+}
+::placeholder {
+  color: var(--login-color);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100v;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  background: #fffefe;
+  h1 {
+    font-family: "Plus Jakarta Sans";
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -1%;
+    padding-top: 15%;
+    padding-bottom: 30px;
+    color: #0f67fe;
+  }
+  .text-left {
+    font-family: "Plus Jakarta Sans";
+    font-weight: bold;
+    font-size: 25px;
+    color: #1e232c;
+  }
+  .input-field {
+    width: 90%;
+    border: 2px solid var(--login-color);
+    color: var(--login-color);
+    border-radius: 5px;
+    input {
+      border: none;
+      outline: none;
+      background: transparent;
+      width: 90%;
+    }
+    &:hover {
+      border: 2px solid #7ba6f1;
+    }
+    .eye-pass {
+      cursor: pointer;
+    }
+  }
+  .check {
+    color: var(--login-color);
+  }
+  input[type="checkbox"] {
+    background-color: var(--main-color);
+  }
+  #submit {
+    width: 90%;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background: #0f67fe;
+    color: #ffffff;
+    border: 1px solid #4a88f4;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+
+.content-login {
+  width: 50%;
+  background: #0f67fe;
+  border: none;
+  height: 100vh;
+  .content-login-top {
+    img {
+      width: 75%;
+      padding-top: 5%;
+      padding-left: 3%;
+    }
+  }
+  .text-right {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 800;
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+  }
+}

@@ -1,0 +1,51 @@
+:root {
+  --main-color: #0f67fe;
+  --white-color: #ffffff;
+  --secwhite-color: #fcfcfc;
+  --dark-color: #1e232c;
+  --light-color: #a1b9e5;
+  --black-color: #040919;
+  --gray-color: #57657f;
+  --red-colo: #bb2e2e;
+  --green-color: #2fba45;
+  --login-color: #bcc3ce;
+  --input-color: #cccccc;
+}
+
+.schedule {
+  border: 0px;
+}
+.schedule .days {
+  overflow-x: scroll;
+}
+.schedule .days .boxes {
+  border: none;
+  background: none;
+  color: #333333;
+  font-weight: bold;
+  display: flex;
+}
+.schedule .days .boxes li {
+  list-style: none;
+  position: relative;
+  top: 0;
+  margin: 0 26px 5px 0;
+  border: 1px solid var(--main-color);
+  width: 236px;
+  height: 120px;
+  cursor: pointer;
+  transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+}
+.schedule .days .boxes li.active {
+  color: white;
+  background: var(--main-color);
+}
+
+.section-two table {
+  border: 30px solid var(--main-color);
+  border-radius: 50px;
+}/*# sourceMappingURL=schedule.css.map */

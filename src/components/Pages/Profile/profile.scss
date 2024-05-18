@@ -1,0 +1,27 @@
+.profile {
+    #info {
+        .card-body {
+          img {
+            width: 120px;
+            height: 120px;
+            border-radius: 200px;
+            -webkit-border-radius: 200px;
+            -moz-border-radius: 200px;
+            -ms-border-radius: 200px;
+            -o-border-radius: 200px;
+          }
+          .info-text {
+                font-size: 20px;
+                font-weight: 500;
+          }
+        }
+    }
+    .card-info {
+        h3 {
+            span {
+                color: black;
+                opacity: .7;
+            }
+        }
+    }
+    }
